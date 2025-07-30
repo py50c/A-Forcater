@@ -9,16 +9,9 @@ def collect_courses():
         exam_score = float(input(" Enter Exam Score(0-70): "))
         credit_unit = int(input(" What's the credit unit for the course? "))
         test_score = float(input(" Enter Test score(0-30): "))
-        courses.append({ "Course Code":course_code, "Exam score(0-70)":exam_score, "Test score(0-30)":test_score, "Credit unit": credit_unit})
+        courses.append({ "Course Code":course_code,  "Exam score":exam_score,  "Test score":test_score,  "Credit unit": credit_unit})
         print()
     return courses
-#grades = courses
-
-
-
-
-
-
 
 
 def main():
@@ -27,6 +20,7 @@ def main():
     print("Where you can confidently forecast your CGPA eventually making you an excellent student!🤩")
     print()
     collect_courses()
+    grades = collect_courses()
     
     prev_cgpa = float(input("Enter previous CGPA, if not leave blank!: ")) #Takes in input for previous CGPA 
     prev_credits = int(input("Enter previous credit unit, if not leave blank!: ")) #Takes in input for previous credit units
