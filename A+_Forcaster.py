@@ -11,6 +11,7 @@ def collect_courses():
         test_score = float(input(" Enter Test score(0-30): "))
         courses.append({ "Course Code":course_code,  "Exam score":exam_score,  "Test score":test_score,  "Credit unit": credit_unit})
         print()
+        Pass
     return courses
 
 
